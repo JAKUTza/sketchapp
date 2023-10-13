@@ -81,13 +81,16 @@ function pen(e) {
         let blue = parseInt(rgbList[2]);
         console.log(red, green, blue);
         e.target.style.backgroundColor = `rgb(${red * 1.3}, ${green * 1.3}, ${blue * 1.3})`;
+    } else if (penMode === 'eraser') {
+        penColor = `rgb(255, 255, 255)`;
+        e.target.style.backgroundColor = penColor;
     }
 }
 function blackPen() {
     penMode = `default`;
 }
 function eraser() {
-    
+    penMode = `eraser`;
 }
 
 function rainbow() {
