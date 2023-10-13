@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchapp</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        Sketchapp
+    </div>
+    <div class="content">
+        <div class="controls">
+            <button id="grid" onclick="gridSize()">Grid size</button>
+            <button id="blackPen" onclick="blackPen()">Black pen</button>
+            <button id="eraser" onclick="eraser()">Eraser</button>
+            <button id="rainbow" onclick="rainbow()">Rainbow</button>
+            <button id="darker" onclick="darkerTool()">Darker - tool</button>
+            <button id="lighter" onclick="lighterTool()">Lighter - tool</button>
+            <button id="clear" onclick="clearGrid()">Clear</button>
+        </div>
+        <div class="grid-wrapper" id="wrapper">
+        </div>
+    </div>
+    <div class="footer">
+        <span>© 2023</span>
+        <a href="https://www.theodinproject.com/">The Odin Project</a>
+    </div>
+</body>
+</html>
